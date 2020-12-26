@@ -1,0 +1,41 @@
+body{
+    background-color: pink;
+}
+
+h2{
+    color:salmon;
+}
+.wrapper{
+    text-align: center;
+    margin-top: 40px;  
+}
+.earth{
+    display: inline-block;
+    transition: 1s ease;
+}
+.earth:hover{
+    transform: rotateZ(360deg);  
+    cursor: pointer;
+}
+.text{
+    margin: 40px auto;
+    padding:40px 0;
+    font-size:20px;
+    color:white;
+    width:100px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    transition: 
+    background 0.5s ease-out,
+    color 1s ease,
+    transform 0.4s ease;
+    border-radius: 0.4s ease;
+  
+}
+.text:hover {
+    background-color: lightblue;
+    color:palevioletred;
+    cursor: pointer;
+    border-radius: 0;
+    transform: rotateZ(45deg);
+}
