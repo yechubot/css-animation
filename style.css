@@ -1,41 +1,74 @@
 body{
-    background-color: pink;
+    background-color: rgb(0, 0, 26);
 }
-
-h2{
-    color:salmon;
+.text{
+    color:white;
+    font-size: 1.7em;
+    font-family: monospace;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top:20px;
 }
 .wrapper{
     text-align: center;
-    margin-top: 40px;  
+    margin-top: 20%;
+
 }
-.earth{
+@keyframes flash{
+    0%,100%{
+        background:pink;
+        box-shadow: 0px 2px 20px 4px rgba(255, 192, 203, 0.822);
+    }50%{
+        background:pink;
+        box-shadow: 0px 2px 20px 4px rgba(255, 192, 203, 0.2);
+    }
+}
+.ballon{
+    position: relative;
+    text-align: center;
     display: inline-block;
-    transition: 1s ease;
-}
-.earth:hover{
-    transform: rotateZ(360deg);  
-    cursor: pointer;
-}
-.text{
-    margin: 40px auto;
-    padding:40px 0;
-    font-size:20px;
-    color:white;
-    width:100px;
+    background-color:pink;
+    width:130px;
+    height: 160px;
     border-radius: 50%;
-    background-color: lightcoral;
-    transition: 
-    background 0.5s ease-out,
-    color 1s ease,
-    transform 0.4s ease;
-    border-radius: 0.4s ease;
-  
+    animation: flash 2s linear both infinite;
+    transition: transform 1s ease;
 }
-.text:hover {
-    background-color: lightblue;
-    color:palevioletred;
-    cursor: pointer;
-    border-radius: 0;
-    transform: rotateZ(45deg);
+.ballon:hover{
+    transform: translateY(-40px);
 }
+ul li{
+    list-style:none;
+    position: relative;
+}
+ul .ribbon{
+ display: block;
+ width:20px;
+ height:10px;
+ top:142px;
+ border-radius: 20%;
+ left:15px;
+ background-color: lightseagreen;
+}
+
+ul .bottom{
+    display: block;
+    width:20px;
+    height:11px;
+    top:142px;
+    border-radius: 10%;
+    left:15px;
+    background-color: pink;
+    animation: flash 2s linear both infinite;
+}
+
+ul .rope{
+    display: block;
+    width:3px;
+    height:200px;
+    top:142px;
+    border-radius: 10%;
+    left:22.5px;
+    background-color: lightseagreen;
+}
+
